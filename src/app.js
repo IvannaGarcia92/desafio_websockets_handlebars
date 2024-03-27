@@ -16,7 +16,8 @@ const socket = require("socket.io");
 
 // middlewares
 //app.use(express.static("./src/public"));
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use(express.static("src/public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 

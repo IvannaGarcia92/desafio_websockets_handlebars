@@ -72,15 +72,21 @@
     "stock": 13
   },
   {
-    "title": "remera",
-    "description": "algodon",
-    "price": "1000",
-    "img": "Sin Imagen",
-    "code": "zzz2",
-    "stock": "10000",
-    "category": "ropa",
-    "status": true,
-    "thumbnails": [],
-    "id": 10
+    "id": 9,
+    "title": "Producto 9",
+    "description": "Descripción del producto 9",
+    "price": 130,
+    "thumbnail": "imagen9.jpg",
+    "code": "YZA567",
+    "stock": 13
+  },
+  {
+    "id": 10,
+    "title": "Producto 10",
+    "description": "Descripción del producto 10",
+    "price": 130,
+    "thumbnail": "imagen10.jpg",
+    "code": "YZA890",
+    "stock": 13
   }
 ]

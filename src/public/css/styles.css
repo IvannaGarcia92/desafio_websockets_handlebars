@@ -1,3 +1,96 @@
-h1 {
-    color:red
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#productsContainer div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #677c92;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/******/
+
+.home-subtitle {
+    text-decoration: underline;
+}
+
+#productsListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#productsListContainer div {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#productsListContainer div p {
+    padding: 10px;
+    margin: 0;
+}
+
+#productsListContainer div p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#productsListContainer div p:nth-child(2) {
+    color: #555;
+}
+
+#productsListContainer div p:last-child {
+    font-weight: bold;
+    color: #007bff;
 }

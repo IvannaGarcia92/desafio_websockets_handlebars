@@ -1,9 +1,8 @@
 <h1>Real Time Products</h1>
-<h2>Productos actualizados en tiempo real</h2>
 
 <div id="productsContainer"></div>
 
-<h2>Formulario para agregar productos</h2>
+<h2>Add your product to the list</h2>
 
 <form>
     <input type="text" id="title" placeholder="Titulo">
@@ -14,10 +13,10 @@
     <input type="number" id="stock" placeholder="Stock">
     <input type="text" id="category" placeholder="Categoria">
     <select id="status">
-        <option value="true"> Activo </option>
-        <option value="false"> Inactivo </option>
+        <option value="true"> Asset </option>
+        <option value="false"> Idle </option>
     </select>
-    <button type="button" id="btnAddProduct"> Enviar </button>
+    <button type="button" id="btnAddProduct"> Send </button>
 </form>
 
 <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
