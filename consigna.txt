@@ -1,0 +1,8 @@
+Consigna: "Configurar nuestro proyecto para que trabaje con Websockets y Handlebars."
+Aspectos a incluir:
+- Servidor: Integrar el motor de plantillas 'Handlebars' e instalarle un servidor de 'socket.io'.
+- Crear las vistas: 
+    - 'home.handlebars', la cual contenga una lista de todos los productos agregados hasta el momento.
+    - 'realTimeProducts.handlebars', la cual vivirá en el endpoint '/realTimeProducts' en nuestro views router, que contendrá la misma lista de productos, sin embargo, ésta trabajará con Websockets.
+        * Al trabajar con Websockets, cada vez que creemos un producto nuevo, o bien cada vez que eliminemos un producto, la lista se debe actualizar automáticamente en la vista correspondiente, (en tiempo real).
+        - Ya que la conexión entre una consulta HTTP y Websockets no está contemplada dentro de la clase, se recomienda que, para la creación y eliminación de un producto, se cree un 'formulario simple' en la vista 'realTimeProducts.handlebars', para que el contenido se envíe desde Websockets y no desde HTTP. Sin embargo, esta no es la mejor solución: /*  */
